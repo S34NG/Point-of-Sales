@@ -9,6 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="lock_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="lock_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Resource\Icons\" />
   </ItemGroup>
 
