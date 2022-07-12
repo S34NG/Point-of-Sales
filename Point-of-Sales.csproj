@@ -13,11 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="lock_icon.png" />
+    <Folder Include="Resource\Icons\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Resource\Icons\" />
+    <Resource Include="lock_icon.png" />
   </ItemGroup>
 
 </Project>
