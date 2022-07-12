@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Menu>
+            <MenuItem Header="_File">
+                <MenuItem Header="_Exit" 
+                    Command="{Binding Path=CloseCommand}" />
+            </MenuItem>
+            <MenuItem Header="_Edit" />
+            <MenuItem Header="_Options" />
+            <MenuItem Header="_Help" />
+        </Menu>
     </Grid>
 </Window>
