@@ -28,7 +28,7 @@
         </Grid.ColumnDefinitions>
 
              <!--logo icon-->
-            <Image Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Source="loginIcon.png" Width="150" Height="150"/>
+            <Image Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Source="" Width="150" Height="150"/>
        
         <Label Content="Welcome" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" FontSize="40" FontWeight="Bold"
                VerticalAlignment="Center" HorizontalAlignment="Center">
