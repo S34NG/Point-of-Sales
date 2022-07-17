@@ -11,7 +11,7 @@ namespace Point_of_Sales.Back_end
     {
         public POSDBContext() : base("Data Source=DESKTOP-N1CF1RE;Initial Catalog=POSProject;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")
         {
-
+            
         }
 
         public DbSet<Customer> Customers { get; set; }
