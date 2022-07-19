@@ -15,7 +15,10 @@ namespace Point_of_Sales.ViewModel
         {
             this.path = path;
         }
-        protected abstract void OnRequestClose();
+        public void OnRequestClose()
+        {
+            RequestClose?.Invoke(null,null);
+        }
         public event EventHandler? RequestClose;
     }
 }

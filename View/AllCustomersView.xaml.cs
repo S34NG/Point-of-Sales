@@ -10,6 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Point_of_Sales.View
@@ -17,7 +18,7 @@ namespace Point_of_Sales.View
     /// <summary>
     /// Interaction logic for AllCustomersView.xaml
     /// </summary>
-    public partial class AllCustomersView : Window
+    public partial class AllCustomersView : UserControl
     {
         public AllCustomersView()
         {

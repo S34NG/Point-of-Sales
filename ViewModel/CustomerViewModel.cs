@@ -12,9 +12,5 @@ namespace Point_of_Sales.ViewModel
         {
         }
 
-        protected override void OnRequestClose()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

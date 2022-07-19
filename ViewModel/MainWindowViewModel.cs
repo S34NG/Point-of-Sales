@@ -14,6 +14,7 @@ namespace Point_of_Sales.ViewModel
 
         public MainWindowViewModel(string path) : base(path)
         {
+            CloseCommand = new RelayCommand((o) => { OnRequestClose(); });
         }
 
         public ObservableCollection<WorkspaceViewModel> Workspaces
@@ -41,11 +42,6 @@ namespace Point_of_Sales.ViewModel
         {
             var wsvm = sender as WorkspaceViewModel;
             if (sender != null && wsvm!=null) Workspaces.Remove(wsvm);
-        }
-
-        protected override void OnRequestClose()
-        {
-            throw new NotImplementedException();
         }
     }
 }
