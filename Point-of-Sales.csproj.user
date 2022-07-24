@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AddProductForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="CreateNewPasswordForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -16,11 +19,11 @@
     <Compile Update="LoginForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="RegisterForm.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AddProductForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="CreateNewPasswordForm.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -31,9 +34,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="RegisterForm.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Resource\Dictionary\ButtonStyle.xaml">
