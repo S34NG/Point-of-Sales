@@ -21,6 +21,7 @@
         </CollectionViewSource>
     </UserControl.Resources>
     <Grid>
+        <Image Source="bbp.png"/>
         <ListView ItemsSource="{Binding Source={StaticResource CustomerGroups}}"></ListView>
     </Grid>
 </UserControl>

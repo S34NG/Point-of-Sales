@@ -13,5 +13,6 @@ namespace Point_of_Sales.Model
         public decimal Cost { get; set; } = 0;
         public decimal Price { get; set; } = 0;
         public string Name { get; set; } = "Unkown";
+        public string Image { get; set; } = "";
     }
 }
