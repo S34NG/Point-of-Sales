@@ -7,6 +7,15 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AddNewProductToStockForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddNewPurchaseForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddProductForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="CreateNewPasswordForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -16,11 +25,26 @@
     <Compile Update="LoginForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="RegisterForm.xaml.cs">
+    <Compile Update="UpdateProductForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UpdateStockItemForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewProductForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AddNewProductToStockForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddNewPurchaseForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddProductForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="CreateNewPasswordForm.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -33,10 +57,16 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="RegisterForm.xaml">
+    <Page Update="Resource\Dictionary\ButtonStyle.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Resource\Dictionary\ButtonStyle.xaml">
+    <Page Update="UpdateProductForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UpdateStockItemForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewProductForm.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Resource\Dictionary\PasswordBoxStyle.xaml">
