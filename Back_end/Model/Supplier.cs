@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Point_of_Sales
 {
-    internal class Supplier
+    public class Supplier
     {
         public int Id { get; set; }
         public string Name { get; set; } = "";

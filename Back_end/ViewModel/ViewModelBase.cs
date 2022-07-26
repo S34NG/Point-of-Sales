@@ -8,10 +8,16 @@ using System.Threading.Tasks;
 
 namespace Point_of_Sales.Back_end.ViewModel
 {
-    public abstract class ViewModelBase
+    public abstract class ViewModelBase:INotifyPropertyChanged
     {
+        protected POSDBContext DbContext = new POSDBContext();
         public bool ThrowOnInvalidPropertyName { get; private set; }
         public string DisplayName { get; set; } = "";
+        private static User? _user = null;
+        public User? User { get => _user; set {
+                _user = value;
+                OnPropertyChanged(nameof(User));
+            } }
 
         public event PropertyChangedEventHandler? PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName)

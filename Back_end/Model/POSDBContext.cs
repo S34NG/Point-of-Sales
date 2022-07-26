@@ -7,9 +7,23 @@ using System.Threading.Tasks;
 
 namespace Point_of_Sales.Back_end
 {
-    internal class POSDBContext: DbContext
+    public class POSDBContext: DbContext
     {
-        public POSDBContext() : base(@"Data Source=LAPTOP-GKBVNMH4\SQLDEV19;Initial Catalog=POSProject;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")
+        private static readonly string DBPath;
+        static POSDBContext()
+        {
+            string path = @"D:\Work\2022\FT_SD_E_13\TermProject\PointofSales\POSDb.mdf";
+            path = Environment.CurrentDirectory;
+            if (path.Contains(@"\bin\"))
+            {
+                path = path.Substring(0, path.IndexOf(@"\bin\"));
+            }
+            path = path + @"\POSDb.mdf";
+            Console.WriteLine(path);
+            DBPath = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={path};Integrated Security=True;Connect Timeout=30";
+
+        }
+        public POSDBContext() : base(DBPath)
         {
             
         }

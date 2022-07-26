@@ -1,5 +1,6 @@
 ﻿namespace Point_of_Sales.Migrations
 {
+    using Point_of_Sales.Back_end;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -18,6 +19,20 @@
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
+            
+            User user = new User { Id = 2, Name = "seang", Password = "123456", 
+                Confirm_Password = "123456", Profile = "Former pirate cruise."};
+            User admin = new User
+            {
+                Id = 1,
+                Name = "admin",
+                Password = "123456",
+                Confirm_Password = "123456",
+                Profile = "Former pirate boss."
+            };
+            context.Users.Add(admin);
+            context.Users.Add(user);
+            context.SaveChanges();
         }
     }
 }

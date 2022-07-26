@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Point_of_Sales.Back_end
 {
-    internal class Sale
+    public class Sale
     {
         public int Id { get; set; }
         public User? User { get; set; }
