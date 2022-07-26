@@ -11,7 +11,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Point_of_Sales.Models;
 
 namespace Point_of_Sales
 {
@@ -20,7 +19,6 @@ namespace Point_of_Sales
     /// </summary>
     public partial class LoginForm : Window
     {
-        PosContext db = new PosContext();
         
 
         public LoginForm()
