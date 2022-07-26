@@ -24,5 +24,23 @@ namespace Point_of_Sales
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            LoginForm login = new LoginForm();
+            login.ShowDialog();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            CreateNewPasswordForm create = new CreateNewPasswordForm();
+            create.ShowDialog();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            ForgetPasswordForm forget = new ForgetPasswordForm();
+            forget.ShowDialog();
+        }
     }
 }

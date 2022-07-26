@@ -8,6 +8,8 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resource/Dictionary/ButtonStyle.xaml" />
+                <ResourceDictionary Source="Resource/Dictionary/TextboxRound.xaml" />
+                <ResourceDictionary Source="Resource/Dictionary/PasswordBoxStyle.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
 

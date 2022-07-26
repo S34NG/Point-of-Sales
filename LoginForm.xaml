@@ -6,68 +6,74 @@
         xmlns:local="clr-namespace:Point_of_Sales"
         mc:Ignorable="d"
         Title="LoginForm" Height="500" Width="500">
-    <Grid Height="500" Width="500" Background="WhiteSmoke">
+    <Grid Background="WhiteSmoke">
         <Grid.RowDefinitions>
             <RowDefinition/>
-            <RowDefinition Height="70"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="10"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition Width="90"/>
-            <ColumnDefinition Width="90"/>
-            <ColumnDefinition Width="90"/>
-            <ColumnDefinition Width="90"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-             <!--logo icon-->
-            <Image Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Source="" Width="150" Height="150"/>
-       
-        <Label Content="Welcome" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" FontSize="40" FontWeight="Bold"
-               VerticalAlignment="Center" HorizontalAlignment="Center">
-         </Label>
+        <!--logo icon-->
+        <Image Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" Source="/cart_icon.png" 
+               Grid.RowSpan="2" Height="65" Width="65" VerticalAlignment="Bottom"/>
+
+        <Label Content="WELCOME" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" 
+               FontSize="29" FontWeight="Bold"
+               VerticalAlignment="Center" HorizontalAlignment="Center" />
 
         <!--Username Input-->
-        <Label Name="lbUsername" HorizontalContentAlignment="Right" Grid.Row="2" FontSize="20" FontWeight="Bold"
-               Content="Username : ">
-        </Label>
-        <Border Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" BorderThickness="1" 
-                BorderBrush="Black" CornerRadius="20" Padding="21,2,21,2" Margin="5,2,5,2">
-            <TextBox BorderBrush="White"  BorderThickness="0" FontSize="15" TextAlignment="Center"></TextBox>
-        </Border>
+        <Label Name="lbUsername" HorizontalContentAlignment="Right" 
+               Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" FontSize="18" FontWeight="Bold"
+               Content="Username: " HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        
+        <TextBox Style="{DynamicResource TextboxRound}"
+                 FontSize="18" TextAlignment="Left" Grid.Row="3" 
+                 Grid.Column="3" Grid.ColumnSpan="4" Height="35"/>
 
-        <!--Password Input-->
-        <Label Name="lbPassword" HorizontalContentAlignment="Right" Grid.Row="4" FontSize="20" FontWeight="Bold"
-               Content="Password : ">
-        </Label>
-        <Border Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" BorderThickness="1" 
-                BorderBrush="Black" CornerRadius="20" Padding="21,2,21,2" Margin="5,2,5,2">
-            <TextBox BorderBrush="White"  BorderThickness="0" FontSize="15" TextAlignment="Center"></TextBox>
-        </Border>
+            <!--Password Input-->
+        <Label Name="lbPassword" HorizontalContentAlignment="Right" 
+               Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" FontSize="18" FontWeight="Bold"
+               Content="Password: " VerticalAlignment="Center" HorizontalAlignment="Right"/>
+        
+        <PasswordBox FontSize="18" 
+                     Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="4" 
+                     Height="35" Style="{DynamicResource PasswordBoxRound}"/>
+
 
         <!--Login Button-->
-        <Border Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" BorderThickness="1" 
-                BorderBrush="Black" CornerRadius="20" Padding="15,0,15,0" Margin="10,3,10,3">
-            <Button Name="btnLogin" Content="Login" Height="30" BorderThickness="0" FontSize="20" FontWeight="Bold"></Button>
-        </Border>
+        <Button Name="btnLogin" Content="Login" Height="30" 
+                BorderThickness="0" FontSize="16" FontWeight="Bold" 
+                Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="2" Width="100px" 
+                Style="{DynamicResource btnRound}"/>
 
         <!--Forget Passoword Link-->
-        <TextBlock Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Padding="10,0,10,20" Height="20" FontSize="15" FontWeight="Bold"
-                   HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="2" 
+                   Padding="10,0,10,20" Height="30" FontSize="15" FontWeight="Bold"
+                   HorizontalAlignment="Center" VerticalAlignment="Bottom">
             <Hyperlink>
-                    <Run Text="Forgot Password"/>
+                    <Run Text="Forgot Password" />
             </Hyperlink>
         </TextBlock>
 
         <!--Create New Account Link-->
-        <TextBlock Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2" Padding="10,0,10,20" Height="50" FontSize="15" FontWeight="Bold"
+        <TextBlock Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="2" 
+                   Padding="10,0,10,20" Height="50" FontSize="15" FontWeight="Bold"
                    HorizontalAlignment="Center" VerticalAlignment="Center">
             <Hyperlink>
                     <Run Text="Create New Account"/>

@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Point_of_Sales"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="600">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button Content="Login" Click="Button_Click" 
+                Height="50" Width="50" VerticalAlignment="Top" 
+                HorizontalAlignment="Left"/>
+
+        <Button Content="Create" Click="Button_Click_1" 
+                Height="50" Width="50" VerticalAlignment="Top" 
+                HorizontalAlignment="Center"/>
+        
+        <Button Content="Forget" Click="Button_Click_2" 
+                Height="50" Width="50" VerticalAlignment="Top" 
+                HorizontalAlignment="Right"/>
 
     </Grid>
 </Window>

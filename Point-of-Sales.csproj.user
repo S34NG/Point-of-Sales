@@ -39,5 +39,11 @@
     <Page Update="Resource\Dictionary\ButtonStyle.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Resource\Dictionary\PasswordBoxStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resource\Dictionary\TextboxRound.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 </Project>
