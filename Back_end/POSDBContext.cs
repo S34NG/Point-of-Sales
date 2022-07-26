@@ -9,7 +9,7 @@ namespace Point_of_Sales.Back_end
 {
     internal class POSDBContext: DbContext
     {
-        public POSDBContext() : base("Data Source=DESKTOP-N1CF1RE;Initial Catalog=POSProject;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")
+        public POSDBContext() : base(@"Data Source=LAPTOP-GKBVNMH4\SQLDEV19;Initial Catalog=POSProject;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")
         {
             
         }

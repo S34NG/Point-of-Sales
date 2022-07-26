@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="lock_icon.png" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.4.4" />
   </ItemGroup>
 
