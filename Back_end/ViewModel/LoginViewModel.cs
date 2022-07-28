@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Net;
 
 namespace Point_of_Sales.Back_end.ViewModel
 {
@@ -36,6 +37,7 @@ namespace Point_of_Sales.Back_end.ViewModel
         }
         private void DoLogin(object? obj)
         {
+            ForgotPasswordViewModel.Email();
             //ErrorMessage = "";
             IsError = Visibility.Hidden;
             if (obj != null && obj is PasswordBox)

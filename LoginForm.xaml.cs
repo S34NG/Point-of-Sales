@@ -26,5 +26,10 @@ namespace Point_of_Sales
             InitializeComponent();
             
         }
+
+        private void LoginView_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

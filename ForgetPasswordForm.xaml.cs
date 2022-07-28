@@ -23,5 +23,10 @@ namespace Point_of_Sales
         {
             InitializeComponent();
         }
+
+        private void ForgotPasswordView_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
