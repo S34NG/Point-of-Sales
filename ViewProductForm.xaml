@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Point_of_Sales"
         mc:Ignorable="d"
-        Title="ViewProductForm" Height="490" Width="750">
+        Title="ViewProductForm" Height="600" Width="750">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
@@ -13,16 +13,7 @@
             <RowDefinition Height="40"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="25"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="25"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="25"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="25"/>
-            <RowDefinition Height="25"/>
-            <RowDefinition Height="25"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="25"/>
+            <RowDefinition Height="70"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -57,28 +48,18 @@
             <Button Name="btnClose" Background="WhiteSmoke" BorderBrush="White" Content="Close" Height="20" FontSize="15" FontWeight="Bold"></Button>
         </Border>
 
-        <!--ID-->
-        
-        <Image Grid.Row="5" Grid.Column="1"
-               Source="Resource/icons/uncheck.png" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Label Content="ID" Foreground="Black" Grid.Row="5" Grid.Column="2" FontSize="14" FontWeight="Bold"
-               VerticalAlignment="Center" HorizontalAlignment="Center"  >
-        </Label>
-        <Label Content="Name" Foreground="Black" Grid.Row="5" Grid.Column="3" FontSize="14" FontWeight="Bold"
-               VerticalAlignment="Center" HorizontalAlignment="Center"  >
-        </Label>
-        <Label Content="Cost" Foreground="Black" Grid.Row="5" Grid.Column="4" FontSize="14" FontWeight="Bold"
-               VerticalAlignment="Center" HorizontalAlignment="Center"  >
-        </Label>
-        <Label Content="Unit" Foreground="Black" Grid.Row="5" Grid.Column="5" FontSize="14" FontWeight="Bold"
-               VerticalAlignment="Center" HorizontalAlignment="Center"  >
-        </Label>
-        <Label Content="Quantity" Foreground="Black" Grid.Row="5" Grid.Column="6" FontSize="14" FontWeight="Bold"
-               VerticalAlignment="Center" HorizontalAlignment="Center"  >
-        </Label>
-        
-        
-         
+        <DataGrid Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="7" Name = "dataGrid"
+                  AlternatingRowBackground = "LightBlue" AlternationCount = "2"
+                  AutoGenerateColumns = "False" FontSize="20" Margin="20,20,10,10" Padding="20,0,0,0">
 
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="70" Header = "ID" Binding = "{Binding Id}" />
+                <DataGridTextColumn Width="160" Header = "Name" Binding = "{Binding Name}"/>
+                <DataGridTextColumn Width="100" Header = "Cost" Binding = "{Binding Cost}"/>
+                <DataGridTextColumn Width="90" Header = "Unit" Binding = "{Binding Unit}"/>
+                <DataGridTextColumn Width="100" Header = "Quantity" Binding = "{Binding Quantity}"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
     </Grid>
 </Window>

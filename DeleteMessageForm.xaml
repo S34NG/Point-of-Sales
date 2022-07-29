@@ -1,0 +1,46 @@
+﻿<Window x:Class="Point_of_Sales.DeleteMessageForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Point_of_Sales"
+        mc:Ignorable="d"
+        Title="DeleteMessageForm" Height="500" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+        <!--Verification Icon-->
+        <Image Grid.Row="1" Grid.Column="2"
+               Source="Resource/icons/verification_icon.png" Width="100" Height="100"/>
+
+        <Label Content="Deleted Successfullly" Foreground="Green" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" FontSize="40" FontWeight="Bold"
+               VerticalAlignment="Center" HorizontalAlignment="Center">
+        </Label>
+
+        <Label Content="Please pass the bottom to return to Dashboard" Foreground="Black" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="5" FontSize="25" FontWeight="Bold"
+               VerticalAlignment="Center" HorizontalAlignment="Center">
+        </Label>
+
+        <!--Close Button-->
+        <Border Grid.Row="5" Grid.Column="2"  BorderThickness="1" 
+                BorderBrush="Blue" CornerRadius="25" Padding="12,0,12,0">
+            <Button Name="btnOk" Background="WhiteSmoke" BorderBrush="White" Content="OK" Height="40" FontSize="25" FontWeight="Bold"></Button>
+        </Border>
+
+    </Grid>
+</Window>

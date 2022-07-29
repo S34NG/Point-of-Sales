@@ -19,10 +19,19 @@
     <Compile Update="CreateNewPasswordForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="DeleteMessageForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DeleteMessageVerifyForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ForgetPasswordForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="LoginForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StockViewForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UpdateProductForm.xaml.cs">
@@ -48,6 +57,12 @@
     <Page Update="CreateNewPasswordForm.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="DeleteMessageForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DeleteMessageVerifyForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ForgetPasswordForm.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -58,6 +73,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Resource\Dictionary\ButtonStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StockViewForm.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UpdateProductForm.xaml">
