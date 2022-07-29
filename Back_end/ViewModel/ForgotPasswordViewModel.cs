@@ -20,6 +20,7 @@ namespace Point_of_Sales.Back_end.ViewModel
         public ForgotPasswordViewModel()
         {
             ResetPwdCommand = new RelayCommand(DoResetPwd);
+            MessageBox.Show("f CREATE");
         }
 
         private void DoResetPwd(object? obj)

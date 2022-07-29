@@ -43,6 +43,9 @@
     <Compile Update="View\MainLayoutView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\RegisterFormView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AddNewProductToStockForm.xaml">
@@ -91,6 +94,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\MainLayoutView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\RegisterFormView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

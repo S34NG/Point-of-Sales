@@ -31,12 +31,21 @@ namespace Point_of_Sales.Back_end.ViewModel
             } }
         public RelayCommand LoginCommand { get; private set; }
         public RelayCommand ForgotPasswordCommand { get; private set; }
+        public RelayCommand CreateNewAccountCommand { get; private set; }
 
         public LoginViewModel()
         {
             LoginCommand = new RelayCommand(DoLogin);
             ForgotPasswordCommand = new RelayCommand(DoForgotEmail);
+            CreateNewAccountCommand = new RelayCommand(DoCreateAccount);
             
+        }
+
+        private void DoCreateAccount(object? obj)
+        {
+            RegisterForm registerForm = new RegisterForm();
+            registerForm.Show();
+            RegisterFormViewModel registerFormViewModel = new RegisterFormViewModel();
         }
 
         private void DoForgotEmail(object? obj)

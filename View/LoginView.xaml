@@ -80,7 +80,7 @@
         <TextBlock Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="2" 
                    Padding="10,0,10,20" Height="25" FontSize="15" FontWeight="Bold"
                    HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Hyperlink>
+            <Hyperlink Command="{Binding Path=CreateNewAccountCommand}">
                     <Run Text="Create New Account"/>
             </Hyperlink>
         </TextBlock>
