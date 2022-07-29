@@ -30,14 +30,30 @@ namespace Point_of_Sales.Back_end.ViewModel
                 OnPropertyChanged(nameof(IsError));
             } }
         public RelayCommand LoginCommand { get; private set; }
+        public RelayCommand ForgotPasswordCommand { get; private set; }
 
         public LoginViewModel()
         {
             LoginCommand = new RelayCommand(DoLogin);
+            ForgotPasswordCommand = new RelayCommand(DoForgotEmail);
+            
         }
+
+        private void DoForgotEmail(object? obj)
+        {
+            User? user = DbContext.Users.Where(u => u.Name == Username).FirstOrDefault();
+            //string email = user!.Email;
+            ForgetPasswordForm forgetPasswordForm = new ForgetPasswordForm();
+            forgetPasswordForm.Show();
+            ForgotPasswordViewModel f = new ForgotPasswordViewModel();
+            //f.Email(user);
+            ForgotPasswordViewModel.Email(user);
+            DbContext.SaveChanges();
+        }
+
         private void DoLogin(object? obj)
         {
-            ForgotPasswordViewModel.Email();
+            
             //ErrorMessage = "";
             IsError = Visibility.Hidden;
             if (obj != null && obj is PasswordBox)

@@ -44,6 +44,7 @@
                Content="Username: " HorizontalAlignment="Right" VerticalAlignment="Center"/>
 
         <TextBox Style="{DynamicResource TextboxRound}"
+                 Name="txtUsername"
                  FontSize="18" TextAlignment="Left" Grid.Row="3" 
                  Grid.Column="3" Grid.ColumnSpan="4" Height="35"
                  Text="{Binding Username}"/>
@@ -68,16 +69,16 @@
 
         <!--Forget Passoword Link-->
         <TextBlock Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="2" 
-                   Padding="10,0,10,20" Height="30" FontSize="15" FontWeight="Bold"
+                   Padding="10,0,10,20" Height="20" FontSize="15" FontWeight="Bold"
                    HorizontalAlignment="Center" VerticalAlignment="Bottom">
-            <Hyperlink>
-                    <Run Text="Forgot Password" />
+            <Hyperlink Command="{Binding Path=ForgotPasswordCommand}">
+                    <Run Text="Forgot Password"/>
             </Hyperlink>
         </TextBlock>
 
         <!--Create New Account Link-->
         <TextBlock Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="2" 
-                   Padding="10,0,10,20" Height="50" FontSize="15" FontWeight="Bold"
+                   Padding="10,0,10,20" Height="25" FontSize="15" FontWeight="Bold"
                    HorizontalAlignment="Center" VerticalAlignment="Center">
             <Hyperlink>
                     <Run Text="Create New Account"/>
