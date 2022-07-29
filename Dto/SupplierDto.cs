@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace Point_of_Sales.Dto
 {
-    public class ProductDto
+    public class SupplierDto
     {
         public int Id { get; set; }
-        public CategoryDto? Category { get; set; };
         public string Name { get; set; } = "";
-        
-        public double Sell_Price { get; set; } 
-        public double Cost_Price { get; set; }
-        public string Unit { get; set; } = "";
+        public string Phone { get; set; } = "";
+        public string Address { get; set; } = "";
+
     }
 }
