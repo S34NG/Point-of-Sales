@@ -23,5 +23,10 @@ namespace Point_of_Sales
         {
             InitializeComponent();
         }
+
+        private void CreateNewPasswordView_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

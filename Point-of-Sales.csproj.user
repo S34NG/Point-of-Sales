@@ -34,6 +34,9 @@
     <Compile Update="ViewProductForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\CreateNewPasswordView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\ForgotPasswordView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -85,6 +88,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Resource\Dictionary\TextboxRound.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreateNewPasswordView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\ForgotPasswordView.xaml">

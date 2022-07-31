@@ -11,7 +11,7 @@ namespace Point_of_Sales.Back_end.ViewModel
 {
     public class LoginViewModel : ViewModelBase
     {
-        private string _username = "Seang";
+        private string _username = "";
         public string Username { get=>_username; set
             {
                 _username = value;
@@ -53,16 +53,17 @@ namespace Point_of_Sales.Back_end.ViewModel
             User? user = DbContext.Users.Where(u => u.Name == Username).FirstOrDefault();
             //string email = user!.Email;
             ForgetPasswordForm forgetPasswordForm = new ForgetPasswordForm();
-            forgetPasswordForm.Show();
             ForgotPasswordViewModel f = new ForgotPasswordViewModel();
             //f.Email(user);
             ForgotPasswordViewModel.Email(user);
+            forgetPasswordForm.DataContext = f;
+            forgetPasswordForm.Show();
+            
             DbContext.SaveChanges();
         }
 
         private void DoLogin(object? obj)
-        {
-            
+        {           
             //ErrorMessage = "";
             IsError = Visibility.Hidden;
             if (obj != null && obj is PasswordBox)
