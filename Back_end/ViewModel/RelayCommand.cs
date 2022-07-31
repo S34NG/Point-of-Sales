@@ -10,7 +10,7 @@ namespace Point_of_Sales.Back_end.ViewModel
 {
     public class RelayCommand : ICommand
     {
-        #region Fields 
+        #region Fields
         readonly Action<object?> _execute;
         readonly Predicate<object?>? _canExecute;
         #endregion // Fields 

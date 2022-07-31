@@ -13,5 +13,7 @@ namespace Point_of_Sales.Back_end
         public string Password { get; set; } = "";
         public string Confirm_Password { get; set; } = "";
         public string Profile { get; set; } = "";
+        public string Email { get; set; } = "";
+        public int Pin { get; set; } = 0;
     }
 }

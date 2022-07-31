@@ -9,9 +9,11 @@ namespace Point_of_Sales.Dto
     public class ProductDto
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public decimal Cost_price { get; set; }
-        public decimal Selling_price { get; set; }
-        public string Unit { get; set; }
+        public CategoryDto? Category { get; set; }
+        public string Name { get; set; } = "";
+        
+        public double Sell_Price { get; set; } 
+        public double Cost_Price { get; set; }
+        public string Unit { get; set; } = "";
     }
 }

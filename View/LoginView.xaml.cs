@@ -24,5 +24,10 @@ namespace Point_of_Sales.View
         {
             InitializeComponent();
         }
+
+        //private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        //{
+
+        //}
     }
 }
