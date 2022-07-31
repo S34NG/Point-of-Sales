@@ -34,6 +34,9 @@
     <Compile Update="ViewProductForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\CreateNewPasswordView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\ForgotPasswordView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -41,6 +44,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\MainLayoutView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\RegisterFormView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -84,6 +90,9 @@
     <Page Update="Resource\Dictionary\TextboxRound.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\CreateNewPasswordView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\ForgotPasswordView.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -91,6 +100,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\MainLayoutView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\RegisterFormView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Point_of_Sales.Back_end.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace Point_of_Sales.View
         public ForgotPasswordView()
         {
             InitializeComponent();
+            
         }
     }
 }

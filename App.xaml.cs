@@ -20,7 +20,14 @@ namespace Point_of_Sales
             var LoginForm = new LoginForm();
             var LoginModel = new LoginViewModel();
             LoginForm.DataContext = LoginModel;
+          
             LoginForm.Show();
+            
+
+
+
+
+
         }
     }
 }
