@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Point_of_Sales.Back_end;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,38 @@ namespace Point_of_Sales
         public AddProductForm()
         {
             InitializeComponent();
+        }
+        POSDBContext db = new POSDBContext();
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtId.Text))
+            {
+                MessageBox.Show("Please Enter Id");
+            }
+            if (string.IsNullOrEmpty(txtProduct.Text))
+            {
+                MessageBox.Show("Please Enter Product ");
+            }
+            if (string.IsNullOrEmpty(txtCost.Text))
+            {
+                MessageBox.Show("Please Enter Price");
+            }
+            if (string.IsNullOrEmpty(txtUnit.Text))
+            {
+                MessageBox.Show("Pleasse Enter Unit ");
+            }
+            if (string.IsNullOrEmpty(cbbCategory.Text))
+            {
+                MessageBox.Show("Please Enter Category ");
+            }
+            Product product = new Product();
+            product.Id = int.Parse(txtId.Text);
+            product.Name = txtProduct.Text;
+            product.Sell_Price = int.Parse(txtCost.Text);
+            product.Unit = txtUnit.Text;
+            product.Category.Id = db.Categories.Where(p => p.Name == cbbCategory.Text).FirstOrDefault().Id;
+            db.Products.Add(product);
+            db.SaveChanges();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Point_of_Sales.Back_end;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,40 @@ namespace Point_of_Sales
         public AddNewPurchaseForm()
         {
             InitializeComponent();
+        }
+        POSDBContext db = new POSDBContext();
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtId.Text))
+            {
+                MessageBox.Show("Please Enter Id");
+            }
+            if (string.IsNullOrEmpty(txtName.Text))
+            {
+                MessageBox.Show("Please Enter Name ");
+            }
+            if (string.IsNullOrEmpty(txtCost.Text))
+            {
+                MessageBox.Show("Please Enter Price");
+            }
+            if (string.IsNullOrEmpty(txtUnit.Text))
+            {
+                MessageBox.Show("Pleasse Enter Unit ");
+            }
+            if (string.IsNullOrEmpty(txtCategory.Text))
+            {
+                MessageBox.Show("Please Enter Category ");
+            }
+            if (string.IsNullOrEmpty(txtDate.Text))
+            {
+                MessageBox.Show("Please enter Date");
+            }
+
+            Purchase purchase = new Purchase();
+            Purchse_Detail purchse_Detail = new Purchse_Detail();
+
+            
         }
     }
 }

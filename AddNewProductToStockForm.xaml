@@ -63,7 +63,7 @@
 
         <Border Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" BorderThickness="1" 
                 BorderBrush="Black" CornerRadius="10" Padding="21,0,21,0" >
-            <TextBox BorderBrush="White" FontSize="15" TextAlignment="Center"></TextBox>
+            <TextBox x:Name="txtId" BorderBrush="White" FontSize="15" TextAlignment="Center"></TextBox>
         </Border>
 
         <!--Name-->
@@ -73,7 +73,7 @@
 
         <Border Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" BorderThickness="1" 
                 BorderBrush="Black" CornerRadius="10" Padding="21,0,21,0" >
-            <TextBox BorderBrush="White" FontSize="15" TextAlignment="Center"></TextBox>
+            <TextBox x:Name="txtName" BorderBrush="White" FontSize="15" TextAlignment="Center"></TextBox>
         </Border>
 
         <!--Cost-->
@@ -83,7 +83,7 @@
 
         <Border Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2" BorderThickness="1" 
                 BorderBrush="Black" CornerRadius="10" Padding="21,0,21,0" >
-            <TextBox BorderBrush="White" FontSize="15" TextAlignment="Center"></TextBox>
+            <TextBox x:Name="txtCost" BorderBrush="White" FontSize="15" TextAlignment="Center"></TextBox>
         </Border>
 
         <!--Unit-->
@@ -93,7 +93,7 @@
 
         <Border Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2" BorderThickness="1" 
                 BorderBrush="Black" CornerRadius="10" Padding="21,0,21,0" >
-            <TextBox BorderBrush="White" FontSize="15" TextAlignment="Center"></TextBox>
+            <TextBox x:Name="txtUnit" BorderBrush="White" FontSize="15" TextAlignment="Center"></TextBox>
         </Border>
 
         <!--Product Category-->
@@ -103,7 +103,7 @@
 
         <Border Grid.Row="6" Grid.Column="5" Grid.ColumnSpan="4" BorderThickness="1" 
                 BorderBrush="Black" CornerRadius="10" Padding="8,0,8,0" >
-            <ComboBox BorderBrush="White" FontSize="15"></ComboBox>
+            <ComboBox x:Name="cbbCategory" BorderBrush="White" FontSize="15"></ComboBox>
         </Border>
 
         <!--Purchase Date-->
@@ -113,13 +113,13 @@
 
         <Border Grid.Row="8" Grid.Column="5" Grid.ColumnSpan="4" BorderThickness="1" 
                 BorderBrush="Black" CornerRadius="10" Padding="8,0,8,0" >
-            <TextBox BorderBrush="White" FontSize="15"></TextBox>
+            <TextBox x:Name="txtDate" BorderBrush="White" FontSize="15"></TextBox>
         </Border>
 
         <!--Add Button-->
         <Border Grid.Row="13" Grid.Column="5" BorderThickness="1" 
                 BorderBrush="Red" CornerRadius="10" Padding="5,0,5,0">
-            <Button Name="btnAdd" Background="WhiteSmoke" BorderBrush="White" Content="Add" Height="20" FontSize="15" FontWeight="Bold"></Button>
+            <Button Name="btnAdd" Background="WhiteSmoke" BorderBrush="White" Content="Add" FontSize="15" FontWeight="Bold" Margin="0,4,0,4" Click="btnAdd_Click"/>
         </Border>
 
     </Grid>
