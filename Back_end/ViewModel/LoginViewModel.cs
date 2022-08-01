@@ -55,6 +55,13 @@ namespace Point_of_Sales.Back_end.ViewModel
             ForgetPasswordForm forgetPasswordForm = new ForgetPasswordForm();
             ForgotPasswordViewModel f = new ForgotPasswordViewModel();
             //f.Email(user);
+            //validate the input
+            if(user==null || user.Name!= Username)
+            {
+                 MessageBox.Show("Please enter or provide correct username to reset password ");
+                 return;
+            }
+
             ForgotPasswordViewModel.Email(user);
             forgetPasswordForm.DataContext = f;
             forgetPasswordForm.Show();
