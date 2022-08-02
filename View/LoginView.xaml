@@ -31,8 +31,10 @@
         </Grid.ColumnDefinitions>
 
         <!--logo icon-->
-        <Image Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" Source="/cart_icon.png" 
-               Grid.RowSpan="2" Height="65" Width="65" VerticalAlignment="Bottom"/>
+        <Image Grid.Row="0" Grid.Column="3" 
+               Grid.ColumnSpan="2" Source="//Resource/icons/cart_icon.png" 
+               Grid.RowSpan="2" Height="65" 
+               Width="65" VerticalAlignment="Bottom"/>
 
         <Label Content="WELCOME" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" 
                FontSize="29" FontWeight="Bold"
@@ -58,7 +60,7 @@
                      Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="4" 
                      Height="35" Style="{DynamicResource PasswordBoxRound}"/>
 
-        <TextBox Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="6" Visibility="{Binding IsError}" Text="{Binding Path=ErrorMessage}"/>
+        
         <!--Login Button-->
         <Button Name="btnLogin" Content="Login" Height="30" 
                 BorderThickness="0" FontSize="16" FontWeight="Bold" 

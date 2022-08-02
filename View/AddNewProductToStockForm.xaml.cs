@@ -12,21 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Point_of_Sales
+namespace Point_of_Sales.View
 {
     /// <summary>
-    /// Interaction logic for UpdateStockItemForm.xaml
+    /// Interaction logic for AddNewProductToStockForm.xaml
     /// </summary>
-    public partial class UpdateStockItemForm : Window
+    public partial class AddNewProductToStockForm : Window
     {
-        public UpdateStockItemForm()
+        public AddNewProductToStockForm()
         {
             InitializeComponent();
-        }
-
-        private void UpdateStockItemForm_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

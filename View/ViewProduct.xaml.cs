@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Point_of_Sales.View
 {
     /// <summary>
-    /// Interaction logic for MainLayoutView.xaml
+    /// Interaction logic for ViewProduct.xaml
     /// </summary>
-    public partial class MainLayoutView : UserControl
+    public partial class ViewProduct : Window
     {
-        public MainLayoutView()
+        public ViewProduct()
         {
             InitializeComponent();
         }

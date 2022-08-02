@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Point_of_Sales"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="600">
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>

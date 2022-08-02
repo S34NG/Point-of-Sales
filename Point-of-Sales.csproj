@@ -10,10 +10,8 @@
 
   <ItemGroup>
     <None Remove="back_left_icon.png" />
-    <None Remove="cart_icon.png" />
     <None Remove="forward_icon.png" />
     <None Remove="lock_icon.png" />
-    <None Remove="verification_icon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -54,10 +52,8 @@
 
   <ItemGroup>
     <Resource Include="back_left_icon.png" />
-    <Resource Include="cart_icon.png" />
     <Resource Include="forward_icon.png" />
     <Resource Include="lock_icon.png" />
-    <Resource Include="verification_icon.png" />
   </ItemGroup>
 
 </Project>

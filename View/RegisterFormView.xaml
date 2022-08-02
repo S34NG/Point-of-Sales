@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Point_of_Sales.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="600">
     <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -16,32 +16,77 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="75"/>
-            <ColumnDefinition Width="13*"/>
-            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
         <!--Image-->
-        <Image Grid.Column="1" Grid.ColumnSpan="2" Source="/Resource/Icons/profile_icon.png" Margin="2,14,-2,14"/>
-        <Image Source="/Resource/Icons/back_left_icon.png" Margin="0,26,0,26"/>
+        <Image Grid.Column="3" Grid.ColumnSpan="2" 
+               Source="/Resource/Icons/profile_icon.png" 
+               Width="50" Height="50" />
         <!--Image-->
 
         <!--Label-->
-        <Label Grid.Column="1" Grid.Row="1" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Margin="73,21,0,0" Height="37" Width="120">Username :</Label>
-        <Label Grid.Column="1" Grid.Row="2" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" Margin="83,0,0,0" Height="36" Width="110" RenderTransformOrigin="0.147,0.678">Password :</Label>
-        <Label Grid.Column="1" Grid.Row="3" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Height="36" Width="190">Confirm Password :</Label>
-        <Label Grid.Column="1" Grid.Row="4" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Height="36" Width="190" Padding="122,0,0,0">Email :</Label>
+        <Label Grid.Column="0" Grid.Row="1" FontSize="18" 
+               Grid.ColumnSpan="2"
+               HorizontalAlignment="Right" VerticalAlignment="Center" 
+               FontWeight="Bold"
+               Content="Username : "/>
+        <Label Grid.Column="0" Grid.Row="2" FontSize="18" 
+               Grid.ColumnSpan="2"
+               HorizontalAlignment="Right" VerticalAlignment="Center" 
+               FontWeight="Bold"
+               Content="Password : "/>
+        <Label Grid.Column="0" Grid.Row="3" FontSize="18" 
+               Grid.ColumnSpan="2"
+               HorizontalAlignment="Right" VerticalAlignment="Center" 
+               FontWeight="Bold"
+               Content="Confirm Password : "
+               />
+        <Label Grid.Column="0" Grid.Row="4"
+               Grid.ColumnSpan="2" FontSize="18" 
+               HorizontalAlignment="Right" VerticalAlignment="Center" 
+               FontWeight="Bold" Content="Email : "/>
         <!--Label-->
 
         <!--TextBox-->
-        <TextBox Grid.Column="2" Grid.Row="1" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="29" Text="{Binding Username}"></TextBox>
-        <TextBox Grid.Column="2" Grid.Row="2" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="28" Text="{Binding Password}"></TextBox>
-        <TextBox Grid.Column="2" Grid.Row="3" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="28" Text="{Binding ConfirmPassword}"></TextBox>
-        <TextBox Grid.Column="2" Grid.Row="4" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="28" Text="{Binding Email}"></TextBox>
+        <TextBox Grid.Column="3" Grid.Row="1" 
+                 Grid.ColumnSpan="3" FontSize="18" 
+                 Height="35" Text="{Binding Username}" 
+                 Style="{DynamicResource TextboxRound}"/>
+        <TextBox Grid.Column="3" Grid.Row="2" FontSize="18" 
+                 Style="{DynamicResource TextboxRound}" 
+                 Grid.ColumnSpan="3" Height="35"
+                 Text="{Binding Password}" 
+                 />
+        <TextBox Grid.Column="3" Grid.Row="3" FontSize="18"
+                 Height="35" Grid.ColumnSpan="3"
+                 Style="{DynamicResource TextboxRound}"
+                 Text="{Binding ConfirmPassword}" 
+                 />
+        <TextBox Grid.Column="3" Grid.Row="4" FontSize="18"
+                 Grid.ColumnSpan="3"
+                 Style="{DynamicResource TextboxRound}"
+                 Height="35" Text="{Binding Email}" 
+                 />
         <!--TextBox-->
 
         <!--Button-->
-        <Button Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="40" FontSize="20" Command="{Binding Path=SignUpCommand}">Sign up</Button>
+        <Button Grid.Column="4" Grid.Row="5" Grid.ColumnSpan="2" 
+                HorizontalAlignment="Right" VerticalAlignment="Center" 
+                Width="100" Height="40" FontSize="20" 
+                Style="{DynamicResource btnRound}"
+                Command="{Binding Path=SignUpCommand}" Content="Sign Up"/>
+        <Button Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2"
+                HorizontalAlignment="Left" VerticalAlignment="Center" 
+                Width="100" Height="40" FontSize="20" 
+                Style="{DynamicResource btnRound}" Content="Cancel"/>
         <!--Button-->
     </Grid>
 </UserControl>

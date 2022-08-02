@@ -1,0 +1,36 @@
+﻿<Window x:Class="Point_of_Sales.ViewProductForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Point_of_Sales"
+        xmlns:v="clr-namespace:Point_of_Sales.View"
+        mc:Ignorable="d"
+        Title="ViewProductForm" Height="490" Width="750">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+
+
+    </Grid>
+</Window>
