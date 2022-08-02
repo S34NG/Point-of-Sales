@@ -34,6 +34,15 @@
     <Compile Update="ViewProductForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\AddNewProductToStockForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddNewPurchaseForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddProductForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\CreateNewPasswordView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -43,10 +52,16 @@
     <Compile Update="View\LoginView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\MainLayoutView.xaml.cs">
+    <Compile Update="View\RegisterFormView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\RegisterFormView.xaml.cs">
+    <Compile Update="View\UpdateProductFormView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UpdateStockItemForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ViewProduct.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -90,6 +105,15 @@
     <Page Update="Resource\Dictionary\TextboxRound.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\AddNewProductToStockForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddNewPurchaseForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddProductForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\CreateNewPasswordView.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -99,10 +123,16 @@
     <Page Update="View\LoginView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\MainLayoutView.xaml">
+    <Page Update="View\RegisterFormView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\RegisterFormView.xaml">
+    <Page Update="View\UpdateProductFormView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UpdateStockItemForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ViewProduct.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
